@@ -8,6 +8,7 @@ module com.ksa.crud_usuarios {
     requires com.dlsc.formsfx;
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
     opens com.ksa.crud_usuarios to javafx.fxml;
     opens com.ksa.crud_usuarios.controller to javafx.fxml;
