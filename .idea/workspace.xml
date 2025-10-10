@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c979eef-1e33-448a-b4b7-9c3b2a654843" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/controller/UserFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/controller/UserFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/controller/UserListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/controller/UserListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/Launcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/controller/UserFormController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/controller/UserListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/model/Pessoa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/model/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/service/DatabaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ksa/crud_usuarios/service/UsuarioService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ksa/crud_usuarios/user-form-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ksa/crud_usuarios/user-list-view.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +60,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Launcher.executor": "Run",
+    "Application.com.ksa.crud_usuarios_java.Launcher.executor": "Run",
     "Maven.CRUD_USUARIOS_JAVA [clean].executor": "Run",
     "Maven.CRUD_USUARIOS_JAVA [install].executor": "Run",
+    "Maven.CRUD_USUARIOS_JAVA [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aluno.senai.pjcn/workspace/crud-de-usuarios",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,11 +82,11 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="com.ksa.crud_usuarios_java.Launcher" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="envFilePaths">
         <option value="$PROJECT_DIR$/.env" />
       </option>
-      <option name="MAIN_CLASS_NAME" value="com.ksa.crud_usuarios.Launcher" />
+      <option name="MAIN_CLASS_NAME" value="com.ksa.crud_usuarios_java.Launcher" />
       <module name="CRUD_USUARIOS_JAVA" />
       <option name="VM_PARAMETERS" value="--enable-native-access=javafx.graphics" />
       <extension name="coverage">
@@ -95,5 +109,8 @@
       <updated>1759358254945</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
 </project>

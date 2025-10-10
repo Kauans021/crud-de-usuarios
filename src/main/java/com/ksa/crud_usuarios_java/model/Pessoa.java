@@ -1,4 +1,4 @@
-package com.ksa.crud_usuarios.model;
+package com.ksa.crud_usuarios_java.model;
 import java.util.Date;
 
 public class Pessoa {
@@ -91,24 +91,4 @@ public class Pessoa {
         this.endereco = endereco;
     }
 
-    //MÉTODOS DA CLASSE
-
-    public int getIdade() {
-        Date currentDate = new Date();
-        this.idade = currentDate.getYear() - this.dataNascimento.getYear();
-        return this.idade;
-    }
-
-    public String getFullSexo() {
-        if (this.sexo == 'M' || this.sexo == 'm')
-            return "Masculino";
-        else if (this.sexo == 'F' || this.sexo == 'f')
-            return "Feminino";
-        else
-            return "";
-    }
-
-    public String info() {
-        return nome + " " + sobrenome + " | " + getIdade() + " anos | " + telefone + " | " + getFullSexo() + " | " + endereco;
-    }
 }

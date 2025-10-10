@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.vls</groupId>
+    <groupId>com.ksa</groupId>
     <artifactId>CRUD_USUARIOS_JAVA</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>CRUD_USUARIOS_JAVA</name>
@@ -15,11 +15,15 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>io.github.cdimascio</groupId>
             <artifactId>java-dotenv</artifactId>
             <version>5.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>21.0.6</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -92,7 +96,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.ksa.crud_usuarios/com.ksa.crud_usuarios.MainApplication
+                            <mainClass>com.ksa.crud_usuarios_java/com.ksa.crud_usuarios_java.MainApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

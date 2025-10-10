@@ -1,14 +1,13 @@
-package com.ksa.crud_usuarios.controller;
+package com.ksa.crud_usuarios_java.controller;
 
-import com.ksa.crud_usuarios.model.Usuario;
-import com.ksa.crud_usuarios.service.UsuarioService;
+import com.ksa.crud_usuarios_java.model.Usuario;
+import com.ksa.crud_usuarios_java.service.UsuarioService;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-
-import java.awt.*;
-import java.lang.classfile.Label;
 
 public class UserFormController {
 
@@ -35,18 +34,11 @@ public class UserFormController {
     private Usuario usuario;
     private UsuarioService usuarioService;
 
-    public void initialize(){
-
-    }
-    public void setStage(){
-
-    }
-    public void setUsuario(){
-
-    }
+    public void initialize(){    }
+    public void setStage(){    }
+    public void setUsuario(){    }
     @FXML
-    public void handleSalvar(){
+    public void handleSalvar(){    }
 
-    }
 
 }
