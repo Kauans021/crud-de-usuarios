@@ -15,7 +15,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
     <Label text="Lista de Usuários">
-        <font>
+           <font>
             <Font name="System Bold" size="18.0"/>
         </font>
         <VBox.margin>
@@ -27,6 +27,8 @@
             <TableColumn fx:id="colNome" prefWidth="150.0" text="Nome"/>
             <TableColumn fx:id="colSobrenome" prefWidth="150.0" text="Sobrenome"/>
             <TableColumn fx:id="colEmail" prefWidth="180.0" text="Email"/>
+            <TableColumn fx:id="colTelefone" prefWidth="180.0" text="telefone"/>
+            <TableColumn fx:id="colLogin" prefWidth="180.0" text="login"/>
             <TableColumn fx:id="colAcoes" minWidth="120.0" text="Ações"/>
         </columns>
     </TableView>

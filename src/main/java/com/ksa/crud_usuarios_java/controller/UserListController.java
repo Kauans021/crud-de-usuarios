@@ -2,19 +2,21 @@ package com.ksa.crud_usuarios_java.controller;
 
 import com.ksa.crud_usuarios_java.model.Usuario;
 import com.ksa.crud_usuarios_java.service.UsuarioService;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 public class UserListController {
 
     @FXML
     private TableView<Usuario> tableView;
     @FXML
-    private TableColumn<Usuario, String> colName;
+    private TableColumn<Usuario, String> colNome;
     @FXML
     private TableColumn<Usuario, String> colSobrenome;
     @FXML
@@ -36,6 +38,8 @@ public class UserListController {
 
 
     public void initialize(){
+        usuarioService = new UsuarioService();
+        carregarDadosTabela();
 
     }
 
@@ -48,6 +52,19 @@ public class UserListController {
     }
 
     public void carregarDadosTabela(){
+        if(usuarioService.isDbloaded()) {
+
+            colNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+            colSobrenome.setCellValueFactory(new PropertyValueFactory<>("sobrenome"));
+            colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
+            colTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
+            colLogin.setCellValueFactory(new PropertyValueFactory<>("Login"));
+
+            obsUsuario = FXCollections.observableArrayList(usuarioService.listarUsuarios());
+            tableView.setItems(obsUsuario);
+        }else{
+            System.out.println("Dados não foram carregados.");
+        }
 
     }
 
