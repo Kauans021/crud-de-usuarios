@@ -17,12 +17,12 @@ public class DatabaseService {
         if(URL == null || USER == null || PASSWORD == null){
             throw new SQLException("Credênciais não foram encontradas no .env");
         }
-            return DriverManager.getConnection(URL,USER,PASSWORD);
-
+        return DriverManager.getConnection(URL,USER,PASSWORD);
     }
 
     public static boolean testarConexao(){
         try(Connection conn = getConnection()){
+            System.out.println("Conexão: online.");
             return conn != null;
         }catch (SQLException e){
             return false;
